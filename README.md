@@ -14,3 +14,8 @@ asíncrona utilizando celery (solo para demostrar el funcionamiento).
 También existe una función asíncrona de nombre tarea_periodica que inserta entidades
 en una tabla de nombre LogTareaPeriodica solo para verificar que el sistema de 
 tareas programadas/repetitivas (celery beat) está funcionando.
+
+Para que funcione correctamente el proyecto en un equipo local es necesario contar con
+rabbitmq y redis.  Postgres es opcional.  Para solventar esto existe un archivo
+docker-compose.yml en la raíz del proyecto de django con la configuración correcta
+de esos servicios para ser ejecutados en contenedores.
